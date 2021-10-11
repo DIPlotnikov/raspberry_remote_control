@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+    <title> My test page</title>
+  </head>
+  
+  <body style= {{stile}}>
+	<form action="{% url 'button:l_on_of'%}" method="post">
+		{% csrf_token %}
+		<button name="Кнопка" value= 'Button' >
+		<img style="vertical-align: middle; width: 150px;" src='https://image.flaticon.com/icons/png/512/25/25823.png' alt="" />
+		{{b.title}}
+		</button>
+	</form>
+  </body>
+</html>
+
